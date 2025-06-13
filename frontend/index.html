@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTful CRUD</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Usuários</h1>
+
+    <h3>Criar Usuário</h3>
+    <input type="text" id="postNome" placeholder="Nome">
+    <input type="number" id="postIdade" placeholder="Idade">
+    <button onclick="criarUsuario()">Enviar POST</button>
+
+    <h3>Atualizar Usuário</h3>
+    <input type="number" id="putId" placeholder="ID do usuário">
+    <input type="text" id="putNome" placeholder="Novo Nome">
+    <input type="number" id="putIdade" placeholder="Nova Idade">
+    <button onclick="atualizarUsuario()">Enviar PUT</button>
+
+    <h3>Remover Usuário</h3>
+    <input type="number" id="deleteId" placeholder="ID do usuário">
+    <button onclick="removerUsuario()">Enviar DELETE</button>
+
+    <h3>Listar Usuários</h3>
+    <button id="botaomostrarTodos"  onclick="mostrarUsuarios()">Mostrar Todos</button>
+    <div id="usuariosLista"></div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
